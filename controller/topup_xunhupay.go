@@ -26,12 +26,12 @@ import (
 
 // XunHuPayResponse 虎皮椒支付响应
 type XunHuPayResponse struct {
-	OpenID  string `json:"openid"`
-	URL     string `json:"url"`
-	URLQr   string `json:"url_qrcode"`
-	ErrCode int    `json:"errcode"`
-	ErrMsg  string `json:"errmsg"`
-	Hash    string `json:"hash"`
+	OpenID  json.Number `json:"openid"`
+	URL     string      `json:"url"`
+	URLQr   string      `json:"url_qrcode"`
+	ErrCode int         `json:"errcode"`
+	ErrMsg  string      `json:"errmsg"`
+	Hash    string      `json:"hash"`
 }
 
 // generateXunHuHash 生成虎皮椒签名
